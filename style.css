@@ -298,3 +298,27 @@ footer h3{
 .dark .search-box{
     background:#222;
 }
+.login-box{
+width:300px;
+margin:100px auto;
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,0.2);
+text-align:center;
+}
+
+.login-box input{
+width:90%;
+padding:10px;
+margin:10px 0;
+}
+
+.login-box button{
+background:#0b6b3a;
+color:white;
+padding:10px 20px;
+border:none;
+border-radius:5px;
+cursor:pointer;
+}
