@@ -19,12 +19,13 @@
         <a href="#">Football</a>
         <a href="#">Fitness</a>
         <a href="#">Contact</a>
-        <button onclick="darkMode()" class="dark-btn">🌙</button>
+        <button onclick="darkMode()">🌙</button>
         <a href="login.html">Connexion</a>
     </nav>
-    <a href="panier.html" id="panier">
+<button id="panier" onclick="window.location.href='cart.html'">
 🛒 Panier : 0
-</a>
+</button>
+
 </header>
 
 <section class="hero">
@@ -71,6 +72,7 @@
     <div class="product-container">
 
         <div class="product">
+            <button onclick="ajouterFavori()">❤️ Favori</button>
            <img src="images/maillot.jpg.avif">
             <h3>Maillot Football</h3>
             <p>299 DH</p>
@@ -79,6 +81,7 @@
         </div>
 
         <div class="product">
+            <button onclick="ajouterFavori()">❤️ Favori</button>
            <img src="images/chaussures.jpg.webp">
             <h3>Chaussures Running</h3>
             <p>799 DH</p>
@@ -87,6 +90,7 @@
         </div>
 
         <div class="product">
+            <button onclick="ajouterFavori()">❤️ Favori</button>
             <img src="images/ballon.jpg.webp">
             <h3>Ballon Adidas</h3>
             <p>199 DH</p>
@@ -94,6 +98,7 @@
             <a href="ballon.html" class="details-btn">Voir Détails</a>
         </div>
         <div class="product">
+            <button onclick="ajouterFavori()">❤️ Favori</button>
             <img src="images/survetement.jpg.webp">
             <h3>Survêtement Nike</h3>
             <p>399 DH</p>
