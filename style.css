@@ -21,14 +21,13 @@ nav a{
     font-weight:bold;
 }
 .hero{
-    background-image:url("https://images.unsplash.com/photo-1517649763962-0c623066013b");
+    background-image:url("images/cover-sports.png.png");
     background-size:cover;
     background-position:center;
-
+    background-repeat:no-repeat;
     color:white;
     text-align:center;
-
-    padding:120px 20px;
+    padding:180px 20px;
 }
 .products{
     padding:50px;

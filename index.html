@@ -3,14 +3,14 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>mr Sports</title>
+    <title>sports lhb</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <header>
-    <h1>mr Sports</h1>
+    <h1>sports lhb</h1>
 
     <nav>
         <a href="#">Accueil</a>
@@ -18,114 +18,116 @@
         <a href="#">Femmes</a>
         <a href="#">Football</a>
         <a href="#">Fitness</a>
-        <a href="#">Contact</a>
+        <a href="contact.html">Contact</a>
         <button onclick="darkMode()">🌙</button>
         <a href="login.html">Connexion</a>
+        <a href="favoris.html">❤️ Favoris</a>
+        <a href="admin.html">⚙️ Admin</a>
     </nav>
-<button id="panier" onclick="window.location.href='cart.html'">
-🛒 Panier : 0
-</button>
 
+    <button id="panier" onclick="window.location.href='cart.html'">
+        🛒 Panier : 0
+    </button>
 </header>
 
 <section class="hero">
-    <section class="hero">
-
-    <h2>Bienvenue chez mr Sports</h2>
-
-    <p>
-        Votre destination pour les meilleurs équipements sportifs au Maroc
-    </p>
+    <h2>Bienvenue chez sports lhb</h2>
+    <p>Votre destination pour les meilleurs équipements sportifs au Maroc</p>
 
     <a href="#produits" class="hero-btn">
         Découvrir nos produits
     </a>
-
 </section>
+
+<section class="intro">
     <h2>Marketplace du Sport au Maroc</h2>
     <p>Achetez et vendez des vêtements et équipements sportifs.</p>
 </section>
-<section class="search-box">
-    <input type="text" placeholder="Rechercher un produit...">
-    <button>🔍 Rechercher</button>
-</section>
-<section class="categories">
 
+<section class="search-box">
+    <input type="text" id="recherche" placeholder="Rechercher un produit...">
+
+    <button onclick="rechercherProduit()">
+        🔍 Rechercher
+    </button>
+</section>
+
+<section class="categories">
     <h2>Nos Catégories</h2>
 
     <div class="cat-container">
-
         <div class="cat-card">⚽ Football</div>
-
         <div class="cat-card">🏃 Running</div>
-
         <div class="cat-card">🏋️ Fitness</div>
-
         <div class="cat-card">🏀 Basketball</div>
-
     </div>
-
 </section>
+
 <section class="products" id="produits">
     <h2>Nos Produits</h2>
 
     <div class="product-container">
 
         <div class="product">
-            <button onclick="ajouterFavori()">❤️ Favori</button>
-           <img src="images/maillot.jpg.avif">
+            <img src="images/maillot.jpg.avif">
             <h3>Maillot Football</h3>
             <p>299 DH</p>
-            <button onclick="ajouterPanier('Maillot Football', 299)">Acheter</button>
+
+            <button onclick="ajouterPanier('Maillot Football',299)">Acheter</button>
+            <button onclick="ajouterFavori('Maillot Football')">❤️ Favori</button>
+
             <a href="maillot.html" class="details-btn">Voir Détails</a>
         </div>
 
         <div class="product">
-            <button onclick="ajouterFavori()">❤️ Favori</button>
-           <img src="images/chaussures.jpg.webp">
+            <img src="images/chaussures.jpg.webp">
             <h3>Chaussures Running</h3>
             <p>799 DH</p>
-            <button onclick="ajouterPanier('Chaussures Running', 799)">Acheter</button>
+
+            <button onclick="ajouterPanier('Chaussures Running',799)">Acheter</button>
+            <button onclick="ajouterFavori('Chaussures Running')">❤️ Favori</button>
+
             <a href="chaussures.html" class="details-btn">Voir Détails</a>
         </div>
 
         <div class="product">
-            <button onclick="ajouterFavori()">❤️ Favori</button>
             <img src="images/ballon.jpg.webp">
             <h3>Ballon Adidas</h3>
             <p>199 DH</p>
-            <button onclick="ajouterPanier('Ballon Adidas', 199)">Acheter</button>
+
+            <button onclick="ajouterPanier('Ballon Adidas',199)">Acheter</button>
+            <button onclick="ajouterFavori('Ballon Adidas')">❤️ Favori</button>
+
             <a href="ballon.html" class="details-btn">Voir Détails</a>
         </div>
+
         <div class="product">
-            <button onclick="ajouterFavori()">❤️ Favori</button>
             <img src="images/survetement.jpg.webp">
             <h3>Survêtement Nike</h3>
             <p>399 DH</p>
-            <button onclick="ajouterPanier('Survêtement Nike', 399)">Acheter</button>
+
+            <button onclick="ajouterPanier('Survêtement Nike',399)">Acheter</button>
+            <button onclick="ajouterFavori('Survêtement Nike')">❤️ Favori</button>
+
             <a href="survetement.html" class="details-btn">Voir Détails</a>
         </div>
+
     </div>
 </section>
+
 <footer>
-    <p>© 2026 mr sports - Marketplace du sport au Maroc</p>
+    <h3>sports lhb</h3>
+    <p>📞 Téléphone : 06 00 00 00 00</p>
+    <p>📧 Email : mrsports@gmail.com</p>
+    <p>📍 Maroc</p>
+    <p>© 2026 sports lhb - Tous droits réservés</p>
 </footer>
+
+<a href="https://wa.me/212600000000" class="whatsapp-btn" target="_blank">
+    💬
+</a>
 
 <script src="script.js"></script>
-<footer>
-    <h3>All Sports</h3>
-    <p>📞 Téléphone : 06 00 00 00 00</p>
 
-    <p>📧 Email : mrsports@gmail.com</p>
-
-    <p>📍 Maroc</p>
-
-    <p>© 2026 mr sports - Tous droits réservés</p>
-</footer>
-<a href="https://wa.me/212600000000"
-class="whatsapp-btn"
-target="_blank">
-💬
-</a>
 </body>
 </html>

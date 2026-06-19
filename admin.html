@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+<meta charset="UTF-8">
+<title>Admin sports lhb</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h1>⚙️ Dashboard Admin</h1>
+</header>
+
+<section class="commande">
+
+    <h2>Ajouter un produit</h2>
+
+    <input type="text" id="nomProduit" placeholder="Nom du produit">
+
+    <input type="text" id="imageProduit" placeholder="Image ex: maillot.jpg">
+
+    <input type="number" id="prixProduit" placeholder="Prix">
+
+    <button onclick="ajouterProduitAdmin()">
+        Ajouter Produit
+    </button>
+
+    <div id="listeProduitsAdmin"></div>
+
+    <hr>
+
+    <h2>📦 Commandes clients</h2>
+
+    <div id="listeCommandes"></div>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>

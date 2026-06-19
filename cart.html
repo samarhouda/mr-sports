@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Panier - mr sports</title>
+    <title>Panier - sports lhb</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,25 +12,22 @@
 </header>
 
 <section class="panier-page">
-
     <h2>Produits sélectionnés</h2>
 
-    <p>Maillot Football - 299 DH</p>
-    <p>Chaussures Running - 799 DH</p>
+    <div id="liste-panier"></div>
 
-    <h3>Total : 1098 DH</h3>
+    <h3 id="total">Total : 0 DH</h3>
 
     <a href="commande.html">
-    <button class="commander">
-        Commander
+        <button class="commander">Commander</button>
+    </a>
+
+    <br><br>
+
+    <button onclick="viderPanier()" class="commander">
+        Vider le panier
     </button>
-</a>
-
-<br><br>
-
-<button onclick="viderPanier()" class="commander">
-    Vider le panier
-</button>
+</section>
 </section>
 <script src="script.js"></script>
 </body>
